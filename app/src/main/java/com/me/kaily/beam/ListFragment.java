@@ -116,7 +116,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
                 if (identity.contains("✔")) {
                     identity = identity;
                 } else {
-                    String newIdentity = identity + "    ✔ -- Completed";
+                    String newIdentity = identity + "    ✔ --- Completed";
                     list.setItemChecked(position, true);
                     mHelper.update(newIdentity, position, identity);
                     Toast.makeText(getActivity(), "Successfully Completed", Toast.LENGTH_LONG).show();
